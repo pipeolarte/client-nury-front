@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "client-nury-front",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

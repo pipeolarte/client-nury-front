@@ -1,0 +1,7 @@
+{
+  "name": "client-nury-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
