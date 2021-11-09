@@ -1,0 +1,11 @@
+{
+  "appId": "nury.app",
+  "appName": "nury",
+  "bundledWebRuntime": true,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
