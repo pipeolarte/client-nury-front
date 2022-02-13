@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Dirección</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-searchbar animated placeholder="Ingresa la dirección" inputmode="text"></ion-searchbar>
+  <ion-button expand="block" (click)="openMap()">Buscar en el mapa</ion-button>
+</ion-content>
