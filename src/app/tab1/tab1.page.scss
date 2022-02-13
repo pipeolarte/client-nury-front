@@ -1,3 +1,31 @@
-ion-title{
-  color: brown;
+.shopping-cart{
+  margin: 24px 24px auto auto;
+}
+.addresses {
+  margin: 24px auto auto 24px;
+}
+.marketing-content {
+  margin-top: 48px;
+}
+.sections {
+  align-items: center;
+}
+.section {
+  width: 80px;
+  height: 80px;
+  background-color: #f5f6f9;
+  border-radius: 15px;
+  justify-content: center;
+  margin: 8px auto 0 auto;
+  display: flex;
+  align-items: center;
+
+}
+.image-section {
+  width: 64px;
+  height: 64px;
+}
+.text-section {
+  text-align: center;
+  font-size: 12px;
 }
