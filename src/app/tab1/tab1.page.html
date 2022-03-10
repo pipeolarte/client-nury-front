@@ -35,7 +35,7 @@
       <ion-card>
         <img src="../../assets/atencion-adulto-mayor.jpeg" />
         <ion-card-header>
-          <ion-card-subtitle>Asistencia médica</ion-card-subtitle>
+          <ion-card-subtitle>Acompañamiento</ion-card-subtitle>
           <ion-card-title>Hoy 20% de descuento</ion-card-title>
         </ion-card-header>
       </ion-card>
@@ -44,19 +44,19 @@
     <div id="sections" class="sections">
       <ion-grid>
         <ion-row>
-          <ion-col size-md="3">
+          <ion-col size-md="3" [routerLink]="['/confirmation-service']" [queryParams]="{service: 'Sutura'}">
             <div class="section">
               <ion-icon class="image-section" name="bandage-outline"></ion-icon>
             </div>
             <div class="text-section">Sutura</div>
           </ion-col>
           <ion-col size-md="3">
-            <div class="section">
+            <div class="section" [routerLink]="['/confirmation-service']" [queryParams]="{service: 'Inyección'}">
               <img class="image-section" src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/000000/external-injection-baby-icongeek26-outline-icongeek26.png"/>
             </div>
             <div class="text-section">Inyección</div>
           </ion-col>
-          <ion-col size-md="3" >
+          <ion-col size-md="3" [routerLink]="['/confirmation-service']" [queryParams]="{service: 'Canalización'}">
             <div class="section">
               <img class="image-section" src="https://img.icons8.com/external-victoruler-solid-victoruler/64/000000/external-intravenous-saline-drip-medical-victoruler-solid-victoruler.png"/>
             </div>
@@ -64,19 +64,19 @@
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col size-md="3">
+          <ion-col size-md="3" [routerLink]="['/confirmation-service']" [queryParams]="{service: 'Acompañamiento'}">
             <div class="section">
               <img class="image-section" src="https://img.icons8.com/ios/50/000000/helping.png"/>
             </div>
             <div class="text-section">Acompañamiento</div>
           </ion-col>
-          <ion-col size-md="3">
+          <ion-col size-md="3" [routerLink]="['/confirmation-service']" [queryParams]="{service: 'Higiene Personal'}">
             <div class="section">
               <img class="image-section" src="https://img.icons8.com/wired/64/000000/shower-and-tub.png"/>
             </div>
-            <div class="text-section">Higiene  Personal</div>
+            <div class="text-section">Higiene Personal</div>
           </ion-col>
-          <ion-col size-md="3" offset-md="3">
+          <ion-col size-md="3" offset-md="3" [routerLink]="['/confirmation-service']" [queryParams]="{service: 'Nebulización'}">
             <div class="section">
               <img class="image-section" src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-oxygen-mask-airport-vitaliy-gorbachev-fill-vitaly-gorbachev.png"/>
             </div>

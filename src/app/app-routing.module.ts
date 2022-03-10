@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'pending-service',
     loadChildren: () => import('./pending-service/pending-service.module').then( m => m.PendingServicePageModule)
+  },
+  {
+    path: 'confirmation-service',
+    loadChildren: () => import('./confirmation-service/confirmation-service.module').then( m => m.ConfirmationServicePageModule)
   }
 ];
 @NgModule({

@@ -15,7 +15,19 @@ export class Tab1Page {
   constructor(public actionSheetCrtl: ActionSheetController,
               private router: Router) {}
 
-  marketing() {
+  async marketing() {
+    const actionSheet = await this.actionSheetCrtl.create({
+      header: 'Promocion valida hasta el 20 de junio',
+      buttons:[],
+      subHeader: '20% de descuento en servicios de acompañamiento pagando con métodos virtuales (tarjeta de credito).',
+      cssClass: 'custom-css',
+      animated: true,
+      backdropDismiss: true,
+      keyboardClose: false,
+      mode: 'md'
+    });
+
+    actionSheet.present();
     console.log('hola');
   }
 
