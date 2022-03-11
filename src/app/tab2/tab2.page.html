@@ -7,11 +7,58 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Ayuda</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="help!"></app-explore-container>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item (click)="infoLastService()">
+        <ion-avatar slot="start">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHRpdGxlPkhlbHAgQ2lyY2xlPC90aXRsZT48cGF0aCBkPSJNMjU2IDgwYTE3NiAxNzYgMCAxMDE3NiAxNzZBMTc2IDE3NiAwIDAwMjU2IDgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIzMiIvPjxwYXRoIGQ9Ik0yMDAgMjAyLjI5cy44NC0xNy41IDE5LjU3LTMyLjU3QzIzMC42OCAxNjAuNzcgMjQ0IDE1OC4xOCAyNTYgMTU4YzEwLjkzLS4xNCAyMC42OSAxLjY3IDI2LjUzIDQuNDUgMTAgNC43NiAyOS40NyAxNi4zOCAyOS40NyA0MS4wOSAwIDI2LTE3IDM3LjgxLTM2LjM3IDUwLjhTMjUxIDI4MS40MyAyNTEgMjk2IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMjgiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIzNDgiIHI9IjIwIi8+PC9zdmc+" />
+        </ion-avatar>
+        <ion-label>
+          <h2>¿Tienes dudas con el ultimo servicio?</h2>
+          <h3>Servicio de Acompañamiento</h3>
+          <p>El 03/08/23 a la 1:00pm</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option >Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item [routerLink]="['/history-service']">
+        <ion-avatar slot="start">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHRpdGxlPlRpbWU8L3RpdGxlPjxwYXRoIGQ9Ik0yNTYgNjRDMTUwIDY0IDY0IDE1MCA2NCAyNTZzODYgMTkyIDE5MiAxOTIgMTkyLTg2IDE5Mi0xOTJTMzYyIDY0IDI1NiA2NHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMzIiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjMyIiBkPSJNMjU2IDEyOHYxNDRoOTYiLz48L3N2Zz4=" />
+        </ion-avatar>
+        <ion-label>
+          <h2>Historial de servicios</h2>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option >Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item [routerLink]="['/payment-methods']">
+        <ion-avatar slot="start">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHRpdGxlPkNhcmQ8L3RpdGxlPjxyZWN0IHg9IjQ4IiB5PSI5NiIgd2lkdGg9IjQxNiIgaGVpZ2h0PSIzMjAiIHJ4PSI1NiIgcnk9IjU2IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjMyIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNjAiIGQ9Ik00OCAxOTJoNDE2TTEyOCAzMDBoNDh2MjBoLTQ4eiIvPjwvc3ZnPg==" />
+        </ion-avatar>
+        <ion-label><h2>Métodos de pago</h2>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option >Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item (click)="infoAccount()">
+        <ion-avatar slot="start">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHRpdGxlPlBlcnNvbiBDaXJjbGU8L3RpdGxlPjxwYXRoIGQ9Ik0yNTguOSA0OEMxNDEuOTIgNDYuNDIgNDYuNDIgMTQxLjkyIDQ4IDI1OC45YzEuNTYgMTEyLjE5IDkyLjkxIDIwMy41NCAyMDUuMSAyMDUuMSAxMTcgMS42IDIxMi40OC05My45IDIxMC44OC0yMTAuODhDNDYyLjQ0IDE0MC45MSAzNzEuMDkgNDkuNTYgMjU4LjkgNDh6bTEyNi40MiAzMjcuMjVhNCA0IDAgMDEtNi4xNC0uMzIgMTI0LjI3IDEyNC4yNyAwIDAwLTMyLjM1LTI5LjU5QzMyMS4zNyAzMjkgMjg5LjExIDMyMCAyNTYgMzIwcy02NS4zNyA5LTkwLjgzIDI1LjM0YTEyNC4yNCAxMjQuMjQgMCAwMC0zMi4zNSAyOS41OCA0IDQgMCAwMS02LjE0LjMyQTE3NS4zMiAxNzUuMzIgMCAwMTgwIDI1OWMtMS42My05Ny4zMSA3OC4yMi0xNzguNzYgMTc1LjU3LTE3OVM0MzIgMTU4LjgxIDQzMiAyNTZhMTc1LjMyIDE3NS4zMiAwIDAxLTQ2LjY4IDExOS4yNXoiLz48cGF0aCBkPSJNMjU2IDE0NGMtMTkuNzIgMC0zNy41NSA3LjM5LTUwLjIyIDIwLjgycy0xOSAzMi0xNy41NyA1MS45M0MxOTEuMTEgMjU2IDIyMS41MiAyODggMjU2IDI4OHM2NC44My0zMiA2Ny43OS03MS4yNGMxLjQ4LTE5Ljc0LTQuOC0zOC4xNC0xNy42OC01MS44MkMyOTMuMzkgMTUxLjQ0IDI3NS41OSAxNDQgMjU2IDE0NHoiLz48L3N2Zz4=" />
+        </ion-avatar>
+        <ion-label><h2>Mi cuenta</h2>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option >Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

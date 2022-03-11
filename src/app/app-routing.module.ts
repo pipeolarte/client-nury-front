@@ -21,6 +21,18 @@ const routes: Routes = [
   {
     path: 'confirmation-service',
     loadChildren: () => import('./confirmation-service/confirmation-service.module').then( m => m.ConfirmationServicePageModule)
+  },
+  {
+    path: 'history-service',
+    loadChildren: () => import('./history-service/history-service.module').then( m => m.HistoryServicePageModule)
+  },
+  {
+    path: 'payment-methods',
+    loadChildren: () => import('./payment-methods/payment-methods.module').then( m => m.PaymentMethodsPageModule)
+  },
+  {
+    path: 'new-card',
+    loadChildren: () => import('./new-card/new-card.module').then( m => m.NewCardPageModule)
   }
 ];
 @NgModule({

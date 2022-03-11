@@ -1,0 +1,23 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Métodos de pago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item [routerLink]="['/new-card']">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-label>Añadir nueva tarjeta de credito</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="card-outline"></ion-icon>
+      <ion-label>Visa 0000</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>

@@ -28,7 +28,6 @@ export class Tab1Page {
     });
 
     actionSheet.present();
-    console.log('hola');
   }
 
   async openSheetModal() {

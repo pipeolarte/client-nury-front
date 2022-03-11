@@ -1,0 +1,32 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Añadir Tarjeta Credito</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label>Nombre del titular</ion-label>
+      <ion-input type="text" style="text-align: end; margin-left: 24px"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Número de tarjeta</ion-label>
+      <ion-input placeholder="0000 0000 0000 0000" type="tel" maxlength="16" style="text-align: end" (ionChange)="cardNumber($event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha de expiracion</ion-label>
+      <ion-datetime max="2035" min="2022" display-format="MMM, YYYY" (ionChange)="expirationDate($event)" style="text-align: end"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Código de seguridad</ion-label>
+      <ion-input placeholder="000" type="password" style="text-align: end" [maxlength]="3"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" >Agregar tarjeta</ion-button>
+
+  </ion-list>
+</ion-content>
