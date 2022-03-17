@@ -1,0 +1,46 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle de tu Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label>Nombres</ion-label>
+      <ion-input type="text" style="text-align: end; margin-left: 24px" (ionChange)="changeName($event)" value="Maria Paula "></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Apellidos</ion-label>
+      <ion-input type="text" style="text-align: end; margin-left: 24px" (ionChange)="changeLastName($event)" value="Rodriguez"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nº de Identificación</ion-label>
+      <ion-input type="tel" style="text-align: end; margin-left: 24px" (ionChange)="changeIdentificationNumber($event)" value="12345678" maxlength="16" minlength="5"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-datetime max="2004" min="1920" display-format="MMM-DD, YYYY" (ionChange)="changeBirthDate($event)" style="text-align: end" value="MAR-06, 1998"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email" style="text-align: end; margin-left: 24px" (ionChange)="changeEmail($event)" value="mariaprodri@gmail.com" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-radio-group value="men" (ionChange)="changeSex($event)">
+        <ion-item>
+          <ion-label>Hombre</ion-label>
+          <ion-radio slot="start" color="success" value="men"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mujer</ion-label>
+          <ion-radio slot="start" color="tertiary" value="women"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" *ngIf="button" (click)="saveData()">Guardar Cambios</ion-button>
+</ion-content>
