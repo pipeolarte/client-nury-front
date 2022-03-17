@@ -1,3 +1,27 @@
-ion-title {
-  color: brown;
+.sections {
+  align-items: center;
+}
+.section {
+  width: 80px;
+  height: 80px;
+  background-color: #f5f6f9;
+  border-radius: 15px;
+  justify-content: center;
+  margin: 8px auto 0 auto;
+  display: flex;
+  align-items: center;
+
+}
+.image-section {
+  width: 64px;
+  height: 64px;
+}
+.text-section {
+  text-align: center;
+  font-size: 12px;
+}
+.divider {
+  margin-top: 24px;
+  height: 24px;
+  background-color: #f2f2f2;
 }

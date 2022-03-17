@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'new-card',
     loadChildren: () => import('./new-card/new-card.module').then( m => m.NewCardPageModule)
+  },
+  {
+    path: 'detail',
+    loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
   }
 ];
 @NgModule({
