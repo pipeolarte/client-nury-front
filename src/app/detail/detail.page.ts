@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DetailPage implements OnInit {
 
   button = false;
+  dasabled = false;
 
   constructor() { }
 
@@ -19,20 +20,25 @@ export class DetailPage implements OnInit {
   }
   changeLastName($event) {
     console.log($event.detail.value);
+    this.button = true;
   }
   changeBirthDate($event) {
     console.log($event.detail.value);
+    this.button = true;
   }
   changeIdentificationNumber($event) {
     console.log($event.detail.value);
+    this.button = true;
   }
   changeEmail($event) {
     console.log($event.detail.value);
   }
   changeSex($event) {
     console.log($event.detail.value);
+    this.button = true;
   }
   saveData() {
+    this.dasabled = true;
     console.log('button');
   }
 

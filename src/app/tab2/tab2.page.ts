@@ -12,9 +12,9 @@ export class Tab2Page {
 
   async infoAccount() {
     const actionSheet = await this.actionSheetCrtl.create({
-      header: 'Promocion valida hasta el 20 de junio',
+      header: 'Comunicate con nosotros',
       buttons:[],
-      subHeader: '20% de descuento en servicios de acompañamiento pagando con métodos virtuales (tarjeta de credito).',
+      subHeader: 'Tel: 8000 000 000',
       cssClass: 'custom-css',
       animated: true,
       backdropDismiss: true,
@@ -26,9 +26,9 @@ export class Tab2Page {
   }
   async infoLastService() {
     const actionSheet = await this.actionSheetCrtl.create({
-      header: 'Promocion valida hasta el 20 de junio',
+      header: 'Comunicate con nosotros',
       buttons:[],
-      subHeader: '20% de descuento en servicios de acompañamiento pagando con métodos virtuales (tarjeta de credito).',
+      subHeader: 'Tel: 8000 000 000',
       cssClass: 'custom-css',
       animated: true,
       backdropDismiss: true,

@@ -51,7 +51,7 @@
   <div class="divider"></div>
   <ion-list style="margin-top: 24px">
     <ion-item-sliding>
-      <ion-item >
+      <ion-item [routerLink]="['terms-and-conditions']">
           <ion-icon name="information-circle-outline" size="large" style="margin-right: 24px"></ion-icon>
         <ion-label>
           <h2>Terminos y Condiciones</h2>
@@ -62,7 +62,7 @@
       </ion-item-options>
     </ion-item-sliding>
     <ion-item-sliding>
-      <ion-item >
+      <ion-item [routerLink]="['privacy']">
         <ion-icon name="document-lock-outline" size="large" style="margin-right: 24px"></ion-icon>
         <ion-label>
           <h2>Tu Privacidad</h2>
@@ -73,7 +73,7 @@
       </ion-item-options>
     </ion-item-sliding>
     <ion-item-sliding>
-      <ion-item >
+      <ion-item [routerLink]="['autorizations']">
         <ion-icon name="information-circle-outline" size="large" style="margin-right: 24px"></ion-icon>
         <ion-label>
           <h2>Permisos y autorizaciones</h2>
