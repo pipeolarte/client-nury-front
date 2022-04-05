@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ConfirmationServicePage
+  },
+  {
+    path: 'add-services',
+    loadChildren: () => import('./add-services/add-services.module').then( m => m.AddServicesPageModule)
   }
 ];
 

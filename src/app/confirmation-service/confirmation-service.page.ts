@@ -3,6 +3,7 @@ import {ActivatedRoute} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {IonDatetime} from "@ionic/angular";
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-confirmation-service',
@@ -14,10 +15,12 @@ export class ConfirmationServicePage implements OnInit {
   tittle = '';
   description = '';
   imgRoute = '';
-  dateValue = '';
+  dateValue: any;
+  minDate: any
 
   constructor(private readonly route: ActivatedRoute,
-              private readonly http: HttpClient) { }
+              private readonly http: HttpClient,
+              private datePipe: DatePipe) { }
 
   ngOnInit() {
     const serviceParam = this.route.snapshot.queryParamMap.get('service');
@@ -29,13 +32,15 @@ export class ConfirmationServicePage implements OnInit {
           this.description = description.service[service];
         }
       });
+    this.dateValue = new Date();
+    this.minDate = this.datePipe.transform(this.dateValue, 'yyyy-MM-dd');
 
   }
 
   getDescriptionService(): Observable<any> {
     return this.http.get<DocumentType>('./assets/descriptionService.json');
   }
-  getDescription(description) {
+  public getDescription(description) {
     switch (description) {
       case 'Sutura':
         return 'suture'

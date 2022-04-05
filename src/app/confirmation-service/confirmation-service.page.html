@@ -15,9 +15,22 @@
       <ion-card-subtitle>{{description}}</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
-  <div style="border-style: solid;">
-    <ion-datetime show-default-time-label>
-    </ion-datetime>
-  </div>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label>Fecha del servio</ion-label>
+      <ion-datetime max="2023" min="{{minDate}}" display-format="DD MMM, YYYY" style="text-align: end" value="{{dateValue}}"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora</ion-label>
+      <ion-datetime  min="{{minDate}}" display-format="HH:MM" style="text-align: end" value="{{dateValue}}"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora fin</ion-label>
+      <ion-datetime  min="{{minDate}}" display-format="HH:MM" style="text-align: end" ></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="block" [routerLink]="['add-services']" [queryParams]="{service: tittle}">Confirmar Servicio</ion-button>
+
+  </ion-list>
 
 </ion-content>
