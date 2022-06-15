@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Nury</string>
-    <string name="title_activity_main">Nury</string>
-    <string name="package_name">nury.app</string>
-    <string name="custom_url_scheme">nury.app</string>
-</resources>
