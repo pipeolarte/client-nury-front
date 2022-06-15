@@ -1,0 +1,6 @@
+{
+	"appId": "nury.app",
+	"appName": "nury",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
